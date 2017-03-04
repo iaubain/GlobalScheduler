@@ -1,0 +1,2 @@
+# GlobalScheduler
+Oltranz Ltd. This is a privately owned app by Oltanz Ltd which serves as a core app in charge of job scheduling for other Oltranz app. Its help reduce the overload of the app and boiler plates for scheduling tasks. It handle many tasks according to the job given. This module is written by Aubain. iaubain@yahoo.fr / aubain.c.ishimwe@oltranz.com Tel: +250 785 534 672 / +250 736 864 662. Thanks to grand support from Rene Manzi Christian Oltranz ltd CEO and R&D team leader.
