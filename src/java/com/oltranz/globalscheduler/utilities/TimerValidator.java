@@ -165,7 +165,7 @@ public class TimerValidator {
     
     private void expressionLogger(){
         try{
-            DateFormat dFormat = new SimpleDateFormat("yyy-MM-dd hh:mm:ss");
+            DateFormat dFormat = new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
             out.print(StatusConfig.APP_DESC+" TimerValidator creating "+mFrequency.getKey()+" ScheduleExpression: "+ mFrequency.getValue()+
                     " Which Expires "+ dFormat.format(expires));
         }catch(Exception e){
