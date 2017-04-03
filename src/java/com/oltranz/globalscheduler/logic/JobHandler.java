@@ -145,7 +145,7 @@ public class JobHandler {
     private Long chainedJob(MyJob myJob){
         try {
             DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            Date expiration = formatter.parse(myJob.getExpiration().replaceAll("Z$", "+0000"));
+            Date expiration = formatter.parse(myJob.getExpiration());
             return new TimerValidator(myJob.getFrequency(), expiration).isValidTimer();
         } catch (ParseException ex) {
             Logger.getLogger(CommandExec.class.getName()).log(Level.SEVERE, null, ex);
@@ -163,7 +163,7 @@ public class JobHandler {
         DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date expiration;
         try {
-            expiration = formatter.parse(myJob.getExpiration().replaceAll("Z$", "+0000"));
+            expiration = formatter.parse(myJob.getExpiration());
         } catch (ParseException ex) {
             Logger.getLogger(CommandExec.class.getName()).log(Level.SEVERE, null, ex);
             return delayExpression;
